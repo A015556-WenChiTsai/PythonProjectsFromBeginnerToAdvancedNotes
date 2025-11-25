@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        // =================================================
+        // 新增的 Pytest 專用除錯配置
+        // =================================================
+        {
+            "name": "Debug Pytest Tests",
+            "type": "debugpy", // 保持與您現有配置相同的除錯器類型
+            "request": "launch",
+            "module": "pytest", // 關鍵：告訴 VS Code 運行 pytest 模組
+            "args": [
+                // 關鍵：指定測試所在的目錄
+                "FromBeginnerToAdvanced/test", 
+                "-v" // 可選：讓輸出更詳細
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
