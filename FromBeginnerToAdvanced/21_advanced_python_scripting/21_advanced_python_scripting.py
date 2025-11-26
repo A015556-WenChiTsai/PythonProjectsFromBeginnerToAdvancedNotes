@@ -102,8 +102,12 @@ def main(source, target):
 
 if __name__ == "__main__":
     args = sys.argv
+    # if len(args) != 3:
+    #     raise Exception("You must pass a source and target directory - only.")
     if len(args) != 3:
-        raise Exception("You must pass a source and target directory - only.")
+        print("錯誤：您必須提供原始目錄 (source) 和目標目錄 (target)。")
+        print(f"用法範例：python {args[0]} <source_dir> <target_dir>")
+        sys.exit(1) # 使用 sys.exit(1) 告知系統程式是非正常結束
 
     source, target = args[1:]
     main(source, target)
