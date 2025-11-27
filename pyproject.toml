@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python_projects_beginner_to_advanced"
+version = "0.1.0"
+description = "Carlos 的 Python 學習與練習專案集"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    {name = "Carlos", email = "you@example.com"}
+]
+
+# 核心依賴
+dependencies = [
+    "cryptography",
+    "pygame",
+    "pytube",
+    "requests",
+    "schedule",
+    "urllib3",
+    "yt-dlp",
+]
+
+# 開發依賴
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pipreqs",
+]
+
+# 懶人設定：自動收錄根目錄下所有資料夾
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
