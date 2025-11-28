@@ -1,0 +1,7 @@
+{
+    "gameNames": [
+        "pong",
+        "snake"
+    ],
+    "numberOfGames": 2
+}
