@@ -1,3 +1,13 @@
+# (.venv) carlos_nnb_ubuntu@LAPTOP-1O97PFDL:~/projects/PythonProjectsFromBeginnerToAdvancedNotes/FromBeginnerToAdvanced/21_advanced_python_scripting$ 
+#python 21_advanced_python_scripting.py source_games target_games
+
+# 驗證結果
+# (.venv) carlos_nnb_ubuntu@LAPTOP-1O97PFDL:~/projects/PythonProjectsFromBeginnerToAdvancedNotes/FromBeginnerToAdvanced/21_advanced_python_scripting$ ./target_games/pong/main
+# 這是 Pong Game！
+
+# 驗證結果
+# (.venv) carlos_nnb_ubuntu@LAPTOP-1O97PFDL:~/projects/PythonProjectsFromBeginnerToAdvancedNotes/FromBeginnerToAdvanced/21_advanced_python_scripting$ ./target_games/snake/game
+# 這是 Snake Game！
 import os
 import json
 import shutil

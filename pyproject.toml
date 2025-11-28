@@ -34,3 +34,8 @@ dev = [
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["*"]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.17.0",
+]
