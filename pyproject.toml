@@ -15,6 +15,7 @@ authors = [
 # 核心依賴
 dependencies = [
     "cryptography",
+    "fastapi[standard]>=0.124.0",
     "ipykernel>=7.1.0",
     "matplotlib>=3.10.7",
     "openpyxl>=3.1.5",
