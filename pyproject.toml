@@ -26,6 +26,7 @@ dependencies = [
     "requests",
     "schedule",
     "schemdraw>=0.22",
+    "streamlit>=1.52.2",
     "urllib3",
     "yt-dlp",
 ]
